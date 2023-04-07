@@ -1,8 +1,10 @@
-let hr = document.getElementById('hours')
-let min = document.getElementById('minutes')
-let sec = document.getElementById('seconds')
+
 
 function p(){
+    let hr = document.getElementById('hours')
+    let min = document.getElementById('minutes')
+    let sec = document.getElementById('seconds')
+
     let dateTime = new Date()
     let hours = dateTime.getHours()
     let minutes = dateTime.getMinutes()
@@ -10,6 +12,9 @@ function p(){
     let a = document.getElementById("a")
     let b = document.getElementById("right-2")
     
+   
+
+
 
     if(hours >= 12){
         a.innerText= 'PM'
@@ -17,6 +22,26 @@ function p(){
     else{
         a.innerText= 'AM' 
     }
+
+
+    if(hours > 12){
+        hours = hours - 12;
+    }
+    
+
+
+    if (hours < 10){
+        hours="0"+hours;
+    }
+    if (minutes < 10){
+        minutes="0"+minutes;
+    }
+    if (seconds < 10){
+        seconds="0"+seconds;
+    }
+
+
+    
 if(hours >= 6 && hours < 12){
     b.innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!"
 }
@@ -30,9 +55,6 @@ else{
     b.innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
 }  
 
-if(hours > 12){
-    hours = hours - 12;
-}
 
 
 
@@ -57,6 +79,7 @@ console.log(timeZone2)
 setInterval(() =>{
     p()
 },1000);
+
 
 let sun1 = document.getElementById("sun1")
 let sun2 = document.getElementById("sun2")
@@ -83,7 +106,30 @@ function alarm(){
     left_3.innerHTML = "GOOD NIGHT !!";
     right_3.style.backgroundImage="url(./night.png)"
    }
+   let morningtext = sun1.options[sun1.selectedIndex].textContent;
+   let morning = document.getElementById("A1")
+   morning.textContent=morningtext;
+
+
+   let morningtext1 = sun2.options[sun2.selectedIndex].textContent;
+   let morning1 = document.getElementById("A2")
+   morning1.textContent=morningtext1;
+
+
+   let morningtext2 = sun3.options[sun3.selectedIndex].textContent;
+   let morning2 = document.getElementById("A3")
+   morning2.textContent=morningtext2;
+
+   let morningtext3 = sun4.options[sun4.selectedIndex].textContent;
+   let morning3 = document.getElementById("A4")
+   morning3.textContent=morningtext3;
+
 }
+
+
+
+
+
 
 
 
