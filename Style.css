@@ -152,7 +152,7 @@
 #left-4{
     height: 40px;
     width:160px;                                                                                                                                                                                                            
-    padding: 10px 10px 10px 45px; 
+    padding: 5px 10px 10px 19px;
     margin: 2px;
     margin-top:-48px;
     font-size: 18px;
@@ -207,6 +207,8 @@ border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 #col-1{
@@ -215,7 +217,9 @@ align-items: center;
 text-align: center;
 justify-content: center;
 background-color: rgb(246, 234, 234);
-font-weight: 700; 
+font-size: 25px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 800;
 z-index: 1;
 
 }
@@ -225,7 +229,8 @@ align-items: center;
 text-align: center;
 justify-content: center;
 flex-wrap: wrap;
-font-size: 18px;
+font-size: 32px;
+font-weight: 800;
 
 }
 #hours h1{
@@ -249,7 +254,8 @@ align-items: center;
 text-align: center;
 justify-content: center;
 flex-wrap: wrap;
-font-size: 18px;
+font-size: 32px;
+font-weight: 800;
 
 }
 
@@ -274,7 +280,8 @@ align-items: center;
 text-align: center;
 justify-content: center;
 flex-wrap: wrap;
-font-size: 18px;  
+font-size: 32px;
+font-weight: 800;
 }
 #seconds h1{
 margin-left: 15px;
